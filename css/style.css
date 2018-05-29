@@ -2,7 +2,6 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: GreatVibes;
 }
 
 body,html {
@@ -13,12 +12,22 @@ body,html {
 	color: white;
 	text-align: center;
 	font-size: 32px;
+	font-family: 'Tajawal', sans-serif;
 }
 
 .navbarFont:hover {
 	transform: scale(1.5);
 	color: darkorange;
 	transition-duration: 0.75s;
+}
+
+.active {
+	color: orange;
+	border-bottom: 3px outset orange;
+}
+
+.activeFont {
+	color: orange;
 }
 
 .transparent {
@@ -45,17 +54,107 @@ body,html {
 }
 
 @font-face {
-	font-family: GreatVibes;
+	font-family: 'GreatVibes';
 	src: url(../fonts/GreatVibes-Regular.ttf);
 }
 
 
-#largeFont {
-	font-family: GreatVibes;
-	font-size: 8vw;
+#spaName {
+	font-family: 'GreatVibes';
+	/*font-family: 'Tajawal', sans-serif;*/
+	font-size: 10vw;
 	color: white;
 	text-align: center;
 	margin-top: 15vw;
+}
+
+#largeFont {
+	font-family: GreatVibes;
+	font-size: 6vw;
+	color: white;
+	text-align: center;
+	/*margin-top: 15vw;*/
+}
+
+#bookNow {
+	font-family: GreatVibes;
+	font-size: 18px;
+	border-radius: 0%;
+}
+
+.img-wrap {
+	position: relative;
+	background-color: black;
+	max-height: 25vh;
+	border-radius: 10%;
+}
+
+.services-img {
+	height: 25vh;
+	width: 100%;
+	opacity: 1;
+	border-radius: 0%;
+	transition: 0.5s;
+	backface-visibility: hidden;
+	border-radius: 10%;
+}
+
+.caption-wrap {
+	transition: 0.5s;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.img-wrap:hover .services-img {
+	opacity: 0.3;
+}
+
+.img-wrap:hover .caption-wrap{
+	opacity: 1;
+}
+
+.img-caption {
+	color: white;
+	border: 3px solid white;
+	padding: 5px;
+	margin: 5px;
+}
+
+.card { 
+	border: none;
+}
+
+.card-title-gallery {
+	text-align: center;
+	font-family: 'Tajawal', sans-serif;
+	color: white;
+}
+
+.modal h5,
+.modal p {
+	text-align: justify;
+}
+
+
+@keyframes focusScreen {
+	from {transform: scale(1.0)};
+	to {transform: scale(2.0);}
+/*	0% {transform: scale(1.0);}
+	10% {transform: scale(1.1);}
+	20% {transform: scale(1.2);}
+	30% {transform: scale(1.3);}
+	40% {transform: scale(1.4);}
+	50% {transform: scale(1.5);}
+	60% {transform: scale(1.6);}
+	70% {transform: scale(1.7);}
+	80% {transform: scale(1.8);}
+	90% {transform: scale(1.9);}
+	100% {transform: scale(2.0);}*/
 }
 
 @keyframes focus {
