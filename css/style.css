@@ -11,7 +11,7 @@ body,html {
 .navbarFont {
 	color: white;
 	text-align: center;
-	font-size: 32px;
+	font-size: 1rem;
 	font-family: 'Tajawal', sans-serif;
 }
 
@@ -62,15 +62,16 @@ body,html {
 #spaName {
 	font-family: 'GreatVibes';
 	/*font-family: 'Tajawal', sans-serif;*/
-	font-size: 10vw;
+	font-size: 6rem;
 	color: white;
 	text-align: center;
 	margin-top: 15vw;
+	animation-duration: 0.5s;
 }
 
 #largeFont {
 	font-family: GreatVibes;
-	font-size: 6vw;
+	font-size: 3rem;
 	color: white;
 	text-align: center;
 	/*margin-top: 15vw;*/
@@ -101,7 +102,7 @@ body,html {
 
 .caption-wrap {
 	transition: 0.5s;
-	opacity: 0;
+	opacity: 0.8;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -166,3 +167,22 @@ body,html {
 	100% {filter: blur(0px);}
 }
 
+.delay25 {
+	animation-delay: 0.25s;
+	animation-duration: 0.5s;
+}
+
+.delay50 {
+	animation-delay: 0.50s;
+	animation-duration: 0.5s;
+}
+
+.delay75 {
+	animation-delay: 0.75s;
+	animation-duration: 0.5s;
+}
+
+.delay100 {
+	animation-delay: 1.00s;
+	animation-duration: 0.5s;
+}
