@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Capstone 1</title>
+  <title>Essentials Spa - Services</title>
 
   
 
@@ -21,7 +21,10 @@
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
 
-    <!-- external css -->
+  <!-- animate.css -->
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+  <!-- external css -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
@@ -37,25 +40,73 @@
             <a class="nav-link mx-5 navbarFont activeFont" id="Services" href="#">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-5 navbarFont" id="About" href="#">About</a>
+            <a class="nav-link mx-5 navbarFont" id="About" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-5 navbarFont" id="Contact Us" href="#">Contact Us</a>
+            <a class="nav-link mx-5 navbarFont" id="Contact Us" href="contact.html">Contact Us</a>
           </li>
         </ul>
     </nav>
 
-    <div class="row">
-      <div class="col"></div>
+    <div class="row mx-0 justify-content-center"> <!-- start row -->
 
-      <div class="img-wrap col-5 col-md-3 px-0" data-toggle="modal" data-target="#hotStonemodal"> <!-- hot stone massage start -->
-        <img class="img-fluid services-img" src="images/people-3184615_1920-optimized.jpg">
-        <div class="caption-wrap">
-          <h5 class="img-caption">Hot Stone Massage</h5>
-        </div>
-      </div>
+      <div class="col-10 col-md-8"> <!-- start center column container -->
+      
+        <div class="row justify-content-center"> <!-- start inner row -->
+          
+          <div class="img-wrap col-2 col-md-3 m-3 p-0 fadeIn animated" data-toggle="modal" data-target="#hotStonemodal"> <!-- hot stone massage start -->
+            <img class="services-img" src="images/people-3184615_1920-optimized.jpg">
+            <div class="caption-wrap">
+              <h5 class="img-caption">Hot Stone Massage</h5>
+            </div>
+          </div>
 
-       <!-- hot stone modal -->
+          
+          <div class="img-wrap col-2 col-md-3 m-3 p-0 fadeIn animated delay50" data-toggle="modal" data-target="#swedishmodal"> <!-- swedish massage start -->
+            <img class="services-img" src="images/massage-2768832_1920-optimized.jpg">
+            <div class="caption-wrap">
+              <h5 class="img-caption">Swedish Massage Therapy</h5> 
+            </div>
+          </div>
+
+        
+          <div class="img-wrap col-2 col-md-3 m-3 p-0 fadeIn animated delay25" data-toggle="modal" data-target="#aromatherapymodal"> <!-- aromatherapy start -->
+            <img class="services-img" src="images/essential-oils-2738555_1920-optimized.jpg">
+            <div class="caption-wrap">
+              <h5 class="img-caption">Aromatherapy Massage</h5> 
+            </div>
+          </div>
+
+        
+          <div class="img-wrap col-2 col-md-3 m-3 p-0 fadeIn animated delay33" data-toggle="modal" data-target="#deepTissuemodal"> <!-- deep tissue massage start -->
+            <img class="services-img" src="images/massage-2768833_1920-optimized.jpg">
+            <div class="caption-wrap">
+              <h5 class="img-caption">Deep Tissue Massage</h5> 
+            </div>
+          </div>
+
+
+          <div class="img-wrap col-2 col-md-3 m-3 p-0 fadeIn animated" data-toggle="modal" data-target="#shiatsumodal"> <!-- shiatsu start -->
+            <img class="services-img" src="images/pexels-photo-275768-optimized.jpeg">
+            <div class="caption-wrap">
+              <h5 class="img-caption">Shiatsu Massage</h5> 
+            </div>
+          </div>
+
+
+          <div class="img-wrap col-2 col-md-3 m-3 p-0 fadeIn animated delay50" data-toggle="modal" data-target="#canineMassagemodal"> <!-- canine massage start -->
+            <img class="services-img" src="images/massage-1790063_1920-optimized.jpg">
+            <div class="caption-wrap">
+              <h5 class="img-caption">Canine Massage</h5> 
+            </div>
+          </div>
+
+        </div> <!-- end inner row -->
+
+
+      <!-- START MODALS  -->
+
+      <!-- hot stone modal -->
       <div class="modal fade" id="hotStonemodal" role="dialog"> <!-- start modal -->
         <div class="modal-dialog modal-dialog-centered"> <!-- start modal dialog -->
           <div class="modal-content"> <!-- start modal content -->
@@ -73,17 +124,8 @@
           </div> <!-- end modal content -->
         </div>  <!-- end modal dialog -->
       </div> <!-- end modal -->
-
-      <div class="col"></div>
-
-      <div class="img-wrap col-5 col-md-3 px-0" data-toggle="modal" data-target="#swedishmodal"> <!-- swedish massage start -->
-        <img class="img-fluid services-img" src="images/massage-2768832_1920-optimized.jpg">
-        <div class="caption-wrap">
-          <h5 class="img-caption">Swedish Massage Therapy</h5> 
-        </div>
-      </div>
-
-       <!-- swedish massage modal -->
+  
+      <!-- swedish massage modal -->
       <div class="modal fade" id="swedishmodal" role="dialog"> <!-- start modal -->
         <div class="modal-dialog modal-dialog-centered"> <!-- start modal dialog -->
           <div class="modal-content"> <!-- start modal content -->
@@ -99,18 +141,9 @@
             </div> <!-- end modal body -->
           </div> <!-- end modal content -->
         </div>  <!-- end modal dialog -->
-      </div> <!-- end modal -->
+      </div> <!-- end modal -->          
 
-      <div class="col"></div>  
-      
-      <div class="img-wrap col-5 col-md-3 px-0" data-toggle="modal" data-target="#aromatherapymodal"> <!-- aromatherapy start -->
-        <img class="img-fluid services-img" src="images/essential-oils-2738555_1920-optimized.jpg">
-        <div class="caption-wrap">
-          <h5 class="img-caption">Aromatherapy Massage</h5> 
-        </div>
-      </div>
-
-       <!-- aromatherapy modal -->
+      <!-- aromatherapy modal -->
       <div class="modal fade" id="aromatherapymodal" role="dialog"> <!-- start modal -->
         <div class="modal-dialog modal-dialog-centered"> <!-- start modal dialog -->
           <div class="modal-content"> <!-- start modal content -->
@@ -129,15 +162,6 @@
         </div>  <!-- end modal dialog -->
       </div> <!-- end modal -->
 
-      <div class="col"></div>
-
-      <div class="img-wrap col-5 col-md-3 px-0" data-toggle="modal" data-target="#deepTissuemodal"> <!-- deep tissue massage start -->
-        <img class="img-fluid services-img" src="images/massage-2768833_1920-optimized.jpg">
-        <div class="caption-wrap">
-          <h5 class="img-caption">Deep Tissue Massage</h5> 
-        </div>
-      </div>
-
        <!-- deep tissue massage modal -->
       <div class="modal fade" id="deepTissuemodal" role="dialog"> <!-- start modal -->
         <div class="modal-dialog modal-dialog-centered"> <!-- start modal dialog -->
@@ -155,15 +179,6 @@
           </div> <!-- end modal content -->
         </div>  <!-- end modal dialog -->
       </div> <!-- end modal -->
-
-      <div class="col"></div>  
-     
-      <div class="img-wrap col-5 col-md-3 px-0" data-toggle="modal" data-target="#shiatsumodal"> <!-- shiatsu start -->
-        <img class="img-fluid services-img" src="images/pexels-photo-275768-optimized.jpeg">
-        <div class="caption-wrap">
-          <h5 class="img-caption">Shiatsu Massage</h5> 
-        </div>
-      </div>
 
        <!-- shiatsu modal -->
       <div class="modal fade" id="shiatsumodal" role="dialog"> <!-- start modal -->
@@ -184,15 +199,6 @@
         </div>  <!-- end modal dialog -->
       </div> <!-- end modal -->
 
-      <div class="col"></div>
-
-      <div class="img-wrap col-5 col-md-3 px-0" data-toggle="modal" data-target="#canineMassagemodal"> <!-- canine massage start -->
-        <img class="img-fluid services-img" src="images/massage-1790063_1920-optimized.jpg">
-        <div class="caption-wrap">
-          <h5 class="img-caption">Canine Massage</h5> 
-        </div>
-      </div>
-
        <!-- canine massage modal -->
       <div class="modal fade" id="canineMassagemodal" role="dialog"> <!-- start modal -->
         <div class="modal-dialog modal-dialog-centered"> <!-- start modal dialog -->
@@ -208,11 +214,11 @@
         </div>  <!-- end modal dialog -->
       </div> <!-- end modal -->
 
-      <div class="col"></div>  
+      </div> <!-- end center column container-->
       
     </div> <!-- end row -->
 
-    </div> <!-- end bg container -->
+  </div> <!-- end bg container -->
 
 
 
