@@ -28,9 +28,9 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
-<body>
+<body id="bg">
 
-  <div class="container-fluid img-fluid" id="bg">
+  <div class="container-fluid img-fluid" >
     <nav class="navbar navbar-expand-md mx-auto">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
@@ -49,8 +49,11 @@
     </nav>
 
     <div class="row mx-0 justify-content-center"> <!-- start row -->
+      
+        <h1 class="col-12 text-center m-4 serviceTitle">Services Offered</h1>
+      
 
-      <div class="col-10 col-md-8"> <!-- start center column container -->
+      <div class="col-12 col-md-8"> <!-- start center column container -->
       
         <div class="row justify-content-center"> <!-- start inner row -->
           
@@ -90,6 +93,27 @@
             <img class="services-img" src="images/pexels-photo-275768-optimized.jpeg">
             <div class="caption-wrap">
               <h5 class="img-caption">Shiatsu Massage</h5> 
+            </div>
+          </div>
+
+          <div class="img-wrap col-2 col-md-3 m-3 p-0 fadeIn animated delay67" data-toggle="modal" data-target="#thaimodal"> <!-- thai start -->
+            <img class="services-img" src="images/massage-1929064_1920-optimized.jpg">
+            <div class="caption-wrap">
+              <h5 class="img-caption">Thai Massage</h5> 
+            </div>
+          </div>
+
+          <div class="img-wrap col-2 col-md-3 m-3 p-0 fadeIn animated delay25" data-toggle="modal" data-target="#reflexologymodal"> <!-- reflexology start -->
+            <img class="services-img" src="images/treatment-1327811_1920-optimized.jpg">
+            <div class="caption-wrap">
+              <h5 class="img-caption">Reflexology</h5> 
+            </div>
+          </div>
+
+          <div class="img-wrap col-2 col-md-3 m-3 p-0 fadeIn animated delay75" data-toggle="modal" data-target="#sportsmodal"> <!-- sports massage start -->
+            <img class="services-img" src="images/sleep-835468_1920-optimized.jpg">
+            <div class="caption-wrap">
+              <h5 class="img-caption">Sports Massage</h5> 
             </div>
           </div>
 
@@ -162,7 +186,7 @@
         </div>  <!-- end modal dialog -->
       </div> <!-- end modal -->
 
-       <!-- deep tissue massage modal -->
+      <!-- deep tissue massage modal -->
       <div class="modal fade" id="deepTissuemodal" role="dialog"> <!-- start modal -->
         <div class="modal-dialog modal-dialog-centered"> <!-- start modal dialog -->
           <div class="modal-content"> <!-- start modal content -->
@@ -180,7 +204,7 @@
         </div>  <!-- end modal dialog -->
       </div> <!-- end modal -->
 
-       <!-- shiatsu modal -->
+      <!-- shiatsu modal -->
       <div class="modal fade" id="shiatsumodal" role="dialog"> <!-- start modal -->
         <div class="modal-dialog modal-dialog-centered"> <!-- start modal dialog -->
           <div class="modal-content"> <!-- start modal content -->
@@ -193,6 +217,60 @@
                 Since no oil or lotion is used, you wear loose clothing. Shiatsu is normally done on a mat on the floor or on a low massage table and is often used to reduce stress and protect against stress-related health issues. It's also believed effective for treating conditions like arthritis, insomnia, back and neck pain, sciatica, and even sinus problems.</p>
                 <p>
                 Shiatsu may help increase energy, promote recovery from injuries, and stimulate the digestive system.</p>
+              </div>
+            </div> <!-- end modal body -->
+          </div> <!-- end modal content -->
+        </div>  <!-- end modal dialog -->
+      </div> <!-- end modal -->
+
+      <!-- thai modal -->
+      <div class="modal fade" id="thaimodal" role="dialog"> <!-- start modal -->
+        <div class="modal-dialog modal-dialog-centered"> <!-- start modal dialog -->
+          <div class="modal-content"> <!-- start modal content -->
+            <div class="modal-body p-1"> <!-- start modal body -->
+              <div class="card" data-dismiss="modal">
+                <img class="card-img-top img-fluid" src="images/massage-1929064_1920-optimized.jpg">
+                <h5 class="card-title">Thai Massage</h5>
+                <p class="card-text">A unique blend of assisted yoga, passive stretching, and pressing massage movements, Thai massage is more energizing than other forms of massage. It's a little bit like yoga without doing the work, as the therapist moves and stretches you in a sequence of postures, usually on a mat on the floor.</p>
+                <p>
+                Like shiatsu, Thai massage aligns the energies of the body. The massage therapist uses rhythmic compression along the body's energy lines to reduce stress and improve flexibility and range of motion. It is done fully clothed.</p>
+                <p>
+                This type of massage can reduce muscle spasticity and back pain, and has been shown to be useful in treating balance problems and migraine symptoms.</p>
+              </div>
+            </div> <!-- end modal body -->
+          </div> <!-- end modal content -->
+        </div>  <!-- end modal dialog -->
+      </div> <!-- end modal -->
+
+      <!-- reflexology modal -->
+      <div class="modal fade" id="reflexologymodal" role="dialog"> <!-- start modal -->
+        <div class="modal-dialog modal-dialog-centered"> <!-- start modal dialog -->
+          <div class="modal-content"> <!-- start modal content -->
+            <div class="modal-body p-1"> <!-- start modal body -->
+              <div class="card" data-dismiss="modal">
+                <img class="card-img-top img-fluid" src="images/treatment-1327811_1920-optimized.jpg">
+                <h5 class="card-title">Reflexology</h5>
+                <p class="card-text">Like having your feet worked on? The therapist uses finger pressure and techniques such as kneading and rubbing to promote relaxation and healing in the body. Reflexology is based on "reflex areas" on the hands and feet, whose energy is believed to be connected to organs and other body parts. By applying pressure to the reflex points, the reflexologist can balance your nervous system and stimulate endorphins, the body's natural pleasure response, which reduces stress and discomfort.</p>
+                <p>
+                Reflexology dates back to ancient civilizations but was refined by American physiotherapist Eunice Ingram in the 1930s. This can be a deeply relaxing therapy, especially if you stand all day or have tired, achy feet. You remove your shoes and socks but otherwise remain clothed.</p>
+              </div>
+            </div> <!-- end modal body -->
+          </div> <!-- end modal content -->
+        </div>  <!-- end modal dialog -->
+      </div> <!-- end modal -->
+
+      <!-- sports massage modal -->
+      <div class="modal fade" id="sportsmodal" role="dialog"> <!-- start modal -->
+        <div class="modal-dialog modal-dialog-centered"> <!-- start modal dialog -->
+          <div class="modal-content"> <!-- start modal content -->
+            <div class="modal-body p-1"> <!-- start modal body -->
+              <div class="card" data-dismiss="modal">
+                <img class="card-img-top img-fluid" src="images/sleep-835468_1920-optimized.jpg">
+                <h5 class="card-title">Sports</h5>
+                <p class="card-text">Designed to prevent and treat injuries, improve flexibility, and enhance athletic performance, sports massage can be used by athletes of all abilities to prepare for or recover from athletic or sports events. Even if you aren't an athlete, sports massage may help muscle pain or restricted range of motion.</p>
+                <p>
+                The idea behind sports massage is to manipulate the body's soft tissues, and focus on certain muscle groups depending on which sport the athlete plays. This type of massage can help with increased blood flow, increased range of motion, and increased flexibility.</p>
+                <p>In sports massage, the strokes are generally faster than a typical Swedish massage. The therapist may also include compression, pressure point therapy, friction, and joint mobilization.</p>
               </div>
             </div> <!-- end modal body -->
           </div> <!-- end modal content -->
@@ -220,7 +298,18 @@
 
   </div> <!-- end bg container -->
 
-
+  <footer class="footer text-center">
+    <div class="footer-wrap">
+      <i class="fab fa-facebook-square fa-lg mx-1"></i>
+      <i class="fab fa-twitter fa-lg mx-1"></i>
+      <i class="fab fa-instagram fa-lg mx-1"></i>
+      <i class="fab fa-pinterest fa-lg mx-1"></i>
+      <i class="fab fa-facebook-messenger fa-lg mx-1"></i>
+      <i class="fab fa-viber fa-lg mx-1"></i>
+      <i class="fab fa-whatsapp fa-lg mx-1"></i>
+      <i class="fas fa-at fa-lg mx-1"></i>
+    </div>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

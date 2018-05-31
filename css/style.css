@@ -94,6 +94,20 @@ body,html {
 	border-radius: 0%;
 }
 
+.footer {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	background: none;
+	color: white
+}
+
+.serviceTitle {
+	font-family: GreatVibes;
+	font-size: 3rem;
+	color: white;
+}
+
 .img-wrap {
 	position: relative;
 	background-color: black;
@@ -129,8 +143,22 @@ body,html {
 	opacity: 0.3;
 }
 
+/*// Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+	.services-img {
+	opacity: 0.5;
+	}
+}
+
 .img-wrap:hover .caption-wrap{
 	opacity: 1;
+}
+
+/*// Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+	.caption-wrap {
+	opacity: 1;
+	}
 }
 
 .img-caption {

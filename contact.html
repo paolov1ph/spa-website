@@ -26,9 +26,9 @@
   <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
 
 </head>
-<body>
+<body id="bg">
 
-  <div class="container-fluid img-fluid" id="bg">
+  <div class="container-fluid img-fluid">
     <nav class="navbar navbar-expand-md mx-auto">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
@@ -68,17 +68,17 @@
 
       
       <div class="row contactPageForms mt-3">
-        <div class="offset-1 offset-md-2 col-10 col-md-4 px-0 contactPageFormsArea">
+        <div class="offset-1 offset-md-2 col-10 col-md-4 px-0 mb-2 contactPageFormsArea">
           
           <div class="row animated fadeIn delay25"> <!-- row names start -->
             <div class="col-12 col-md-6 pr-0">
               <label for="firstName" class="formsText"><strong class="formsText">First Name</strong></label>
-              <input class="form-control formsFirstName" type="text" name="firstName" placeholder="First Name"></input>    
+              <input class="form-control p-1 formsFirstName" type="text" name="firstName" placeholder="First Name"></input>    
             </div>
 
             <div class="col-12 col-md-6 pr-0">
               <label for="lastName" class="formsText"><strong class="formsText">Last Name</strong></label>
-              <input class="form-control formsLastName" type="text" name="lastName" placeholder="Last Name"></input>
+              <input class="form-control p-1 formsLastName" type="text" name="lastName" placeholder="Last Name"></input>
             </div>
           </div> <!-- row names end -->
           
@@ -87,7 +87,7 @@
           <div class="row animated fadeIn delay33"> <!-- row email start -->
             <div class="col-12 pr-0">
               <label for="email" class="formsText"><strong class="formsText">Email</strong></label>
-              <input class="form-control formsEmail" type="email" name="email" placeholder="username@email.com"></input>    
+              <input class="form-control p-1 formsEmail" type="email" name="email" placeholder="username@email.com"></input>    
             </div>
           </div> <!-- row email end -->
 
@@ -96,7 +96,7 @@
           <div class="row animated fadeIn delay50"> <!-- row subject start -->
             <div class="col-12 pr-0">
               <label for="subject" class="formsText"><strong class="formsText">Subject</strong></label>
-              <input class="form-control formsSubject" type="text" name="subject" placeholder="subject"></input>    
+              <input class="form-control p-1 formsSubject" type="text" name="subject" placeholder="subject"></input>    
             </div>
           </div> <!-- row subject end -->     
 
@@ -105,16 +105,16 @@
           <div class="row animated fadeIn delay67"> <!-- row message start -->
             <div class="col-12 pr-0">
               <label for="message" class="formsText"><strong class="formsText">Message</strong></label>
-              <textarea class="form-control formsMessage" rows="2" name="message" placeholder="your message"></textarea>
+              <textarea class="form-control p-1 formsMessage" rows="2" name="message" placeholder="your message"></textarea>
             </div>        
           </div> <!-- row message end -->
           <br>
           <button type="submit" class="btn contactPageButton animated fadeIn delay75"><strong>Send</strong></button>
 
-        </div>
+          </div>
 
-        <div class="col-10 col-md-4">
-          <h4 class="text-center px-3"><strong class="inquiries animated fadeIn delay25">For inquiries and reservations please contact:</strong></h4>
+        <div class="col-10 col-md-4 text-center">
+          <h4 class="px-3"><strong class="inquiries animated fadeIn delay25">For inquiries and reservations please contact:</strong></h4>
 
           <p class="address px-3 animated fadeIn delay25">3rd Floor Caswynn Building, No. 134 Timog Avenue, Sacred Heart, Quezon City, 1103 Metro Manila</p>
 
@@ -129,13 +129,21 @@
 
         </div>
       </div>
+    </div>     
+  </div> <!-- end bg container -->
+
+  <footer class="footer text-center">
+    <div class="footer-wrap">
+      <i class="fab fa-facebook-square fa-lg mx-1"></i>
+      <i class="fab fa-twitter fa-lg mx-1"></i>
+      <i class="fab fa-instagram fa-lg mx-1"></i>
+      <i class="fab fa-pinterest fa-lg mx-1"></i>
+      <i class="fab fa-facebook-messenger fa-lg mx-1"></i>
+      <i class="fab fa-viber fa-lg mx-1"></i>
+      <i class="fab fa-whatsapp fa-lg mx-1"></i>
+      <i class="fas fa-at fa-lg mx-1"></i>
     </div>
-    
-
-
-   
-      
-  </div>
+  </footer>
 
 
 
