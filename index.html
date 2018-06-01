@@ -16,14 +16,17 @@
   <!-- animate.css -->
   <link rel="stylesheet" type="text/css" href="css/animate.css">
 
-  <!-- external css -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-
   <!-- font awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
   <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed|Tajawal" rel="stylesheet">
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+
+  <!-- external css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 <body id="bg">
@@ -33,13 +36,13 @@
     <nav class="navbar navbar-expand-md mx-auto">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item active">
-            <a class="nav-link mx-5 navbarFont activeFont" id="Home" href="index.html">Home</a>
+            <a class="nav-link mx-5 navbarFont activeFont" id="Home" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-5 navbarFont" id="Services" href="services.html">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-5 navbarFont" id="About" href="#">About</a>
+            <a class="nav-link mx-5 navbarFont" id="About" href="about.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-5 navbarFont" id="Contact Us" href="contact.html">Contact Us</a>
@@ -53,9 +56,9 @@
       <div class="row transparent">
         <div class="col"></div>
         <div class="col-12 col-md-8 displayCenter">
-          <h1 class="animated fadeIn" id="spaName">Essentials</h1>
+          <h1 class="animated fadeIn" id="spaName">Essentials Spa</h1>
           <h1 class="" id="largeFont"><span class="fadeIn animated delay25">Relax</span> <span class="fadeIn animated delay50">&</span> <span class="fadeIn animated delay75">Rejuvenate</span></h1>
-          <button type="button" class="btn btn-outline-light transparent fadeIn animated delay100" id="bookNow">Book Now</button>
+          <button type="button" class="btn btn-outline-light transparent fadeIn animated delay100" data-toggle="modal" data-target="#signUpmodal"id="bookNow">Book Now</button>
         </div> 
         <div class="col"></div>
       </div>  
@@ -75,6 +78,67 @@
       <i class="fas fa-at fa-lg mx-1"></i>
     </div>
   </footer>
+
+  <!-- sign up modal -->
+
+  <!-- start modal -->
+      <div class="modal fade" id="signUpmodal" role="dialog"> <!-- start modal -->
+        <div class="modal-dialog modal-dialog-centered"> <!-- start modal dialog -->
+          <div class="modal-content"> <!-- start modal content -->
+            
+            <div class="modal-title p-4"> <!-- start modal title -->
+              <h5><strong>Booking Form</strong></h5>
+            </div> <!-- end modal title -->
+
+
+            <div class="modal-body pt-1 px-4"> <!-- start modal body -->
+
+              <div class=""> <!-- first name start -->
+                <label for="firstName" class="formsText"><strong class="signUpText">First Name</strong></label>
+                <input class="form-control p-1 formsFirstName" type="text" name="firstName" placeholder="First Name"></input>    
+              </div> <!-- first name end -->
+
+              <div class="pt-2"> <!-- last name start -->
+                <label for="lastName" class="formsText"><strong class="signUpText">Last Name</strong></label>
+                <input class="form-control p-1 formsLastName" type="text" name="lastName" placeholder="Last Name"></input>    
+              </div> <!-- last name end -->
+
+              <div class="pt-2"> <!-- contact info start -->
+                <label for="email" class="formsText"><strong class="signUpText">Contact Information</strong></label>
+                <input class="form-control p-1 formsLastName" type="text" name="contactInfo" placeholder="Telephone / Mobile / Email Address"></input>    
+              </div> <!-- contact info end -->
+
+              <div class="pt-2"> <!-- date time start -->
+                <label for="dateTime" class="formsText"><strong class="signUpText">Contact Information</strong></label>
+                <textarea class="form-control p-1 formsMessage" rows="2" name="message" placeholder="When would you like your appointment?"></textarea>
+              </div> <!-- date time end -->       
+
+              <div class="pt-2"> <!-- massage type start -->
+                <label for="dateTime" class="formsText"><strong class="signUpText">Select Serice</strong></label>
+                <select class="custom-select">
+                  <option selected>Please select the type of massage</option>
+                  <option value="hotstone">Hot Stone Massage</option>
+                  <option value="swedish">Swedish Massage Therapy</option>
+                  <option value="Aromatherapy">Aromatherapy Massage</option>
+                  <option value="deeptissue">Deep Tissue Massage</option>
+                  <option value="shiatsu">Shiatsu Massage</option>
+                  <option value="thai">Thai Massage</option>
+                  <option value="reflexology">Reflexology Massage</option>
+                  <option value="sports">Sports Massage</option>
+                  <option value="canine">Canine Massage (for pets)</option>
+                </select>
+              </div> <!-- massage type end -->
+
+              <div class="pt-2">
+               <button type="submit" data-dismiss="modal" class="btn signUpButton"><strong>Confirm</strong></button> 
+
+               <button type="cancel" data-dismiss="modal" class="btn signUpButton"><strong>Cancel</strong></button> 
+              </div>    
+
+            </div> <!-- end modal body -->
+          </div> <!-- end modal content -->
+        </div>  <!-- end modal dialog -->
+      </div> <!-- end modal -->   
 
   
 

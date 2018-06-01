@@ -2,9 +2,11 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: 'Tajawal', sans-serif;
 }
 
-body,html {
+body,
+html {
 	height: 100%;
 }
 
@@ -81,17 +83,25 @@ body,html {
 }
 
 #largeFont {
-	font-family: GreatVibes;
-	font-size: 3rem;
+	font-family: 'GreatVibes';
+	font-size: 2rem;
 	color: white;
 	text-align: center;
 	/*margin-top: 15vw;*/
+}
+
+span {
+	font-family: inherit;
 }
 
 #bookNow {
 	font-family: GreatVibes;
 	font-size: 18px;
 	border-radius: 0%;
+}
+
+.signUpText {
+	color: black;
 }
 
 .footer {
@@ -117,6 +127,8 @@ body,html {
 	height: 100%;
 	width: 100%;
 	transition: all 0.5s ease;
+	font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 .services-img {
@@ -126,6 +138,7 @@ body,html {
 	transition: all 0.5s ease;
 	backface-visibility: hidden;
 	border-radius: 5%;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 .caption-wrap {
@@ -137,31 +150,37 @@ body,html {
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 .img-wrap:hover .services-img {
 	opacity: 0.3;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 /*// Small devices (landscape phones, less than 768px)*/
 @media (max-width: 767.98px) {
 	.services-img {
 	opacity: 0.5;
+	font-family: 'Roboto Condensed', sans-serif;
 	}
 }
 
 .img-wrap:hover .caption-wrap{
 	opacity: 1;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 /*// Small devices (landscape phones, less than 768px)*/
 @media (max-width: 767.98px) {
 	.caption-wrap {
 	opacity: 1;
+	font-family: 'Roboto Condensed', sans-serif;
 	}
 }
 
 .img-caption {
+	font-family: 'Roboto Condensed', sans-serif;
 	color: white;
 	border: 3px solid white;
 	padding: 1px;
@@ -183,6 +202,12 @@ body,html {
 .modal h5,
 .modal p {
 	text-align: justify;
+}
+
+#bookNowModal {
+	font-family: GreatVibes;
+	font-size: 18px;
+	border-radius: 0%;
 }
 
 /*Contact page styles*/
@@ -260,7 +285,6 @@ body,html {
 	text-align: center;
 	margin-top: 1vw;	
 }
-
 
 @keyframes focusScreen {
 	from {transform: scale(1.0)};
